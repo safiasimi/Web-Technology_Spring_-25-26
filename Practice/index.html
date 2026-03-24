@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <h2>Text Analyzer Tool</h2>
+ 
+    <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+   
+    <button onclick="analyzeText()">Analyze Text</button>
+ 
+    <div id="result"></div>
+ 
+    <script src="script.js"></script>
+ 
+</body>
+</html>
+ 
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+ 
+h2 {
+    text-align: center;
+}
+ 
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+ 
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+ 
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+ 
+function analyzeText() {
+    let text = document.getElementById("inputText").value.trim();
+    let resultDiv = document.getElementById("result");
+ 
+    if (text === "") {
+        resultDiv.innerHTML = "Please enter some text.";
+        return;
+    }
+ 
+    let charCount = text.length;
+    let wordCount = text.split(" ").filter(word => word !== "").length;
+ 
+    let reversedText = text.split("").reverse().join("");
+ 
+    resultDiv.innerHTML =
+        "Total Characters: " + charCount + "<br>" +
+        "Total Words: " + wordCount + "<br>" +
+        "Reversed Text: " + reversedText;
+}
+ 
