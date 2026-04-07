@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test for Lab Performance</title>
+    <link rel="stylesheet" href="../design/style.css" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form onsubmit="return showTotalMark()">
+      <label for="InputFirstName" id="FirstName">First Name</label>
+      <label for="InputLastName">Last Name</label>
+      <br />
+
+      <input type="text" id="InputFirstName" name="InputFirstName" />
+      <input type="text" id="InputLastName" name="InputLastName" />
+      <br /><br />
+
+      <label id="firstnamewrong"></label>
+      <label id="lasttNameWrong"></label>
+      <br /><br />
+
+      <label for="InputEmail" id="emaillabel">Email</label>
+      <label for="InputPhone">Phone</label>
+      <br />
+
+      <input type="text" id="InputEmail" name="email" />
+      <input type="text" id="InputPhone" name="phone" />
+      <br /><br />
+
+      <label id="emailwrong"></label>
+      <label id="phoneWrong"></label>
+      <br /><br />
+
+      <label for="infotext">What do you have in your mind</label>
+      <br />
+
+      <input
+        type="text"
+        id="infotext"
+        name="info"
+        placeholder="Please enter query ..."
+      />
+      <br />
+
+      <label id="wrongifo"></label>
+      <br /><br />
+
+      <input type="submit" id="submit" name="submit" value="Submit" />
+    </form>
+
+    <script src="../JavaScript/Script.js"></script>
+  </body>
+</html>

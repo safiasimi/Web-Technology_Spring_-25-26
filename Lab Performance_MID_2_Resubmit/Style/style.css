@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+label {
+  font-size: medium;
+}
+
+form {
+  background-color: azure;
+  width: 500px;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#FirstName {
+  margin-right: 95px;
+}
+
+#emaillabel {
+  margin-right: 130px;
+}
+
+#firstnamewrong {
+  margin-right: 50px;
+}
+
+#emailwrong {
+  margin-right: 50px;
+}
+
+#emailwrong,
+#phoneWrong,
+#firstnamewrong,
+#lasttNameWrong,
+#wrongifo {
+  color: red;
+}
+
+#submit {
+  background-color: green;
+  color: white;
+  margin-left: 180px;
+  padding: 8px 15px;
+  border: none;
+}
+
+#infotext {
+  width: 300px;
+  height: 100px;
+}
