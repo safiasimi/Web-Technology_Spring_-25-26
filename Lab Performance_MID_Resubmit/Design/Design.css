@@ -1,0 +1,19 @@
+form {
+  background-color: azure;
+  width: 250px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+input {
+  width: 190px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
